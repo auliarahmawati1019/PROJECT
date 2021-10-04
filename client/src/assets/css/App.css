@@ -1,0 +1,15 @@
+.navigation {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.card {
+  align-content: center;
+  top: 100px;
+  padding: 40px;
+}
+
+.container {
+  
+}

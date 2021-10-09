@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import Navigation from '../component/header/Navigations'
 import { Container, Button, Form, Card } from 'react-bootstrap'
+import { useHistory } from 'react-router-dom'
 
 
 const Login = () => {
 
     const [getUser, setUser] = useState({ email: '', password: '' })
+    const histori = useHistory()
 
     const inputChange = (e) => {
         const { name, value } = e.target
@@ -14,6 +16,10 @@ const Login = () => {
 
     const inputUser = () => {
         console.log(getUser)
+    }
+
+    const goTo = () => {
+        histori.push('/visi')
     }
     
     return (
@@ -28,6 +34,8 @@ const Login = () => {
                     <Form.Control onChange={ inputChange } name="password" type="password" placeholder="Your password" />
                     <br />
                     <Button onClick={ inputUser }>Login</Button>
+                    <br />
+                    <Button onClick={ goTo }>Sample to visi - misi</Button>
                 </Card>
             </Container>
         </>

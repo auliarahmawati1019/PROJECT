@@ -14,7 +14,7 @@ const  Surat = () => {
           </Card.Body>
           <Card.Body align="justify">PT. MELIA SEHAT SEJAHTERA memang benar-benar perusahaan yang paling taat terhadap peraturan Pemerintah Indonesia, karena bukan hanya SIUPL yang kami miliki, tetapi ada juga SIUP (Surat Izin Usaha Perdagangan) dan IUPB (Izin Usaha Penjualan Berjenjang)</Card.Body>
         </Card>
-        <img align="center"src="aul1.JPG"></img>
+        <img align="center" src="aul1.JPG" alt="surat"></img>
       </Container>
     </>
   )

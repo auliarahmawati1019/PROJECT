@@ -2,9 +2,8 @@ import React, { useState } from 'react'
 import Navigation from '../component/header/Navigations'
 import { Container, Button, Form, Card } from 'react-bootstrap'
 
-
-const Login = () => {
-
+function Login() {
+    
     const [getUser, setUser] = useState({ email: '', password: '' })
 
     const inputChange = (e) => {
@@ -15,7 +14,7 @@ const Login = () => {
     const inputUser = () => {
         console.log(getUser)
     }
-    
+
     return (
         <>
             <Navigation />
@@ -23,15 +22,15 @@ const Login = () => {
                 <Card>
                     <h3>Login</h3>
                     <br />
-                    <Form.Control onChange={ inputChange } name="email" type="email" placeholder="Your email" />
-                    <br/>
-                    <Form.Control onChange={ inputChange } name="password" type="password" placeholder="Your password" />
+                    <Form.Control onChange={inputChange} name="email" type="email" placeholder="Your email" />
                     <br />
-                    <Button onClick={ inputUser }>Login</Button>
+                    <Form.Control onChange={inputChange} name="password" type="password" placeholder="Your password" />
+                    <br />
+                    <Button onClick={inputUser}>Login</Button>
                 </Card>
             </Container>
         </>
-     )
+    )
 }
  
 export default Login

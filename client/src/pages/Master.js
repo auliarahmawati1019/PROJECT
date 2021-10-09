@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './assets/css/App.css'
+import Masterd from './pages/Masterd'
 
-
-const App = () => {
+function Master() {
 
   const { pathname } = window.location
 
@@ -13,8 +13,12 @@ const App = () => {
     case '/signup':
       return <Signup />
 
-   
+    case '/Masterd':
+      return <Masterd />
+
   
+
+
     default:
       return <Index />
   }

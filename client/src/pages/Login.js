@@ -3,9 +3,8 @@ import Navigation from '../component/header/Navigations'
 import { Container, Button, Form, Card } from 'react-bootstrap'
 import { useHistory } from 'react-router-dom'
 
-
-const Login = () => {
-
+function Login() {
+    
     const [getUser, setUser] = useState({ email: '', password: '' })
     const histori = useHistory()
 
@@ -29,9 +28,9 @@ const Login = () => {
                 <Card>
                     <h3>Login</h3>
                     <br />
-                    <Form.Control onChange={ inputChange } name="email" type="email" placeholder="Your email" />
-                    <br/>
-                    <Form.Control onChange={ inputChange } name="password" type="password" placeholder="Your password" />
+                    <Form.Control onChange={inputChange} name="email" type="email" placeholder="Your email" />
+                    <br />
+                    <Form.Control onChange={inputChange} name="password" type="password" placeholder="Your password" />
                     <br />
                     <Button onClick={ inputUser }>Login</Button>
                     <br />
@@ -39,7 +38,7 @@ const Login = () => {
                 </Card>
             </Container>
         </>
-     )
+    )
 }
  
 export default Login
